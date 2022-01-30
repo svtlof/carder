@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carder</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='stylesheet' href='./css/bootstrap.min.css'>
+    <link rel='stylesheet' href='./css/main.css'>
+    <link rel='stylesheet' href='./css/componentsChangerWindow/changer.css'>
+    <link rel='stylesheet' href='./css/componentsChangerWindow/changer-window.css'>
+    <link rel='stylesheet' href='./css/componentsChangerWindow/changer-window-content.css'>
+    <link rel='stylesheet' href='./css/componentsChangerWindow/changer-color-picker.css'>
+    <link rel='stylesheet' href='./css/componentsChangerWindow/switcher.css'>
+    <link rel='stylesheet' href='./css/componentsChangerWindow/range.css'>
+    <link rel='stylesheet' href='./css/componentsCard/cardMainParams.css'>
+    <link rel='stylesheet' href='./css/componentsCard/cardTable.css'>
+
+    <link rel="stylesheet" href="Coloris-main/dist/coloris.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 changer">
+          <div class="changer-window">
+
+            <div class="circle-panel"><div></div><div></div><div></div></div>
+
+            <div class="changer-window-content">
+
+              <div class="padding-card-controller controller">
+                <span>card-padding:</span>
+                <input type="range" name="padding-controller" id="padding-card-controller" min="0" max="100" value="0">
+                <div class="padding-card-indicator indicator">0</div>
+                <div class="px-percent-changer">
+                  <div class="px-card px-block">px</div>
+                  <div class="percent-card percent-block">%</div>
+                </div>
+              </div>
+
+              <div class="card-width-controller controller">
+                <span>card-width:</span>
+                <input type="text" class="card-width text-input" value="100">
+                <div class="px-percent-changer">
+                  <div class="px-card-width px-block">px</div>
+                  <div class="percent-card-width percent-block">%</div>
+                </div>
+                <div class="card-width-btn change-digit-btn">-></div>
+              </div>
+
+              <div class="card-height-controller controller">
+                <span>card-height:</span>
+                <input type="text" class="card-height text-input" value="400">
+                <div class="px-percent-changer">
+                  <div class="px-card-height px-block">px</div>
+                  <div class="vh-card-height percent-block">vh</div>
+                </div>
+                <div class="card-height-btn change-digit-btn">-></div>
+              </div>
+
+              <div class="border-card-controller controller">
+                <span>border-card:</span>
+                <input type="range" name="border-controller" id="border-card-controller" min="0" max="100" value="0">
+                <div class="border-card-indicator indicator">0</div>
+                <div class="px-percent-changer">
+                  <div class="px-card-radius px-block">px</div>
+                  <div class="percent-card-radius percent-block">%</div>
+                </div>
+              </div>
+
+              <div class="image-controller">
+                <span>image:</span>
+                <div class="toggle-btn image-btn" id="_2nd-toggle-btn">
+                  <input type="checkbox">
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="border-image-controller controller">
+                <span>border-image:</span>
+                <input type="range" name="border-controller" id="border-image-controller" min="0" max="100" value="0">
+                <div class="border-image-indicator indicator">0</div>
+                <div class="px-percent-changer">
+                  <div class="px-image px-block">px</div>
+                  <div class="percent-image percent-block">%</div>
+                </div>
+              </div>
+
+              <div class="title-controller controller">
+                <span>title:</span>
+                <div class="toggle-btn title-btn" id="_2nd-toggle-btn">
+                  <input type="checkbox">
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="title-font-size-controller controller">
+                <span>title-font-size:</span>
+                <input type="text" class="title-font-size text-input" value="25">
+                <div class="px-percent-changer">
+                  <div class="px-title-font-size px-block">px</div>
+                </div>
+                <div class="title-font-size-btn change-digit-btn">-></div>
+              </div>
+
+              <div class="title-position">
+                <span>title-position:</span>
+                <div class="title-position-block position-block">
+                  <div class="title-position-left position-left"></div>
+                  <div class="title-position-center position-center"></div>
+                  <div class="title-position-right position-right"></div>
+                </div>
+              </div>
+
+              <div class="title-margin-top-controller controller">
+                <span>title-margin-top:</span>
+                <input type="text" class="title-margin-top text-input" value="10">
+                <div class="px-percent-changer">
+                  <div class="px-title-margin-top px-block">px</div>
+                  <div class="percent-title-margin-top percent-block">%</div>
+                </div>
+                <div class="title-margin-top-btn change-digit-btn">-></div>
+              </div>
+
+              <div class="text-controller controller">
+                <span>main-text:</span>
+                <div class="toggle-btn text-btn" id="_2nd-toggle-btn">
+                  <input type="checkbox">
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="text-position">
+                <span>text-position:</span>
+                <div class="text-position-block position-block">
+                  <div class="text-position-left position-left"></div>
+                  <div class="text-position-center position-center"></div>
+                  <div class="text-position-right position-right"></div>
+                </div>
+              </div>
+
+              <div class="text-margin-top-controller controller">
+                <span>text-margin-top:</span>
+                <input type="text" class="text-margin-top text-input" value="10">
+                <div class="px-percent-changer">
+                  <div class="px-text-margin-top px-block">px</div>
+                  <div class="percent-text-margin-top percent-block">%</div>
+                </div>
+                <div class="text-margin-top-btn change-digit-btn">-></div>
+              </div>
+
+              <div class="card-btn controller">
+                <span>button:</span>
+                <div class="toggle-btn card-button-btn" id="_2nd-toggle-btn">
+                  <input type="checkbox">
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="border-card-controller controller">
+                <span>border-button:</span>
+                <input type="range" name="border-controller" id="border-button-controller" min="0" max="100" value="0">
+                <div class="border-button-indicator indicator">0</div>
+                <div class="px-percent-changer">
+                  <div class="px-button-radius px-block">px</div>
+                  <div class="percent-button-radius percent-block">%</div>
+                </div>
+              </div>
+
+              <div class="button-margin-top-controller controller">
+                <span>button-margin-top:</span>
+                <input type="text" class="button-margin-top text-input" value="10">
+                <div class="px-percent-changer">
+                  <div class="px-button-margin-top px-block">px</div>
+                  <div class="percent-button-margin-top percent-block">%</div>
+                </div>
+                <div class="button-margin-top-btn change-digit-btn">-></div>
+              </div>
+
+              <div class="button-position">
+                <span>button-position:</span>
+                <div class="button-position-block position-block">
+                  <div class="button-position-left position-left"></div>
+                  <div class="button-position-center position-center"></div>
+                  <div class="button-position-right position-right"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="cardTable">
+            <div class="user-card">
+              <div class="card-image"></div>
+              <div class="card-title" contenteditable="true">Card's title</div>
+              <div class="card-text" contenteditable="true">In this block you can change the main text. It could be subtitle, price of product or paragraph</div>
+              <div class="button-parent-block"><button class="card-button">button</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="Coloris-main/dist/coloris.min.js"></script>
+    <script src="./js/script.js"></script>
+
+  </body>
+</html>

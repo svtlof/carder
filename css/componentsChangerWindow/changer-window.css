@@ -1,0 +1,26 @@
+.changer-window{
+  width: 100%;
+  border: 1px solid #8f8f8f;
+  border-radius: 0.5rem;
+}
+
+.circle-panel{
+  width: 100%;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.circle-panel div{
+  width: 12px;
+  height: 12px;
+  margin: 0 0 0 9px ;
+  border-radius: 50%;
+}
+
+.circle-panel div:nth-child(1){background-color: #ff3c3c}
+.circle-panel div:nth-child(2){background-color: #ffd452}
+.circle-panel div:nth-child(3){background-color: #2cda00}

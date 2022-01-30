@@ -1,0 +1,52 @@
+@import "fonts/opensans/opensans.css";
+@import "fonts/roboto/roboto.css";
+@import "fonts/lato/lato.css";
+
+@import "fonts/opensans/opensans.css";
+@import "fonts/roboto/roboto.css";
+@import "fonts/lato/lato.css";
+
+/* width */
+::-webkit-scrollbar {
+width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: rgba(#292929, 0.75);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgba(#292929, 0.75);
+}
+
+*, *:before, *:after{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: 'Roboto';
+}
+
+body{
+	margin: 0;
+	font-family: 'Roboto';
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* background-color: #EAEBED; */
+	background-color: #fff;
+	background-size: cover;
+}

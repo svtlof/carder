@@ -1,0 +1,163 @@
+.changer-window-content{
+  padding: 1rem;
+}
+
+.changer-window:nth-child(1){
+  margin-top: 0;
+}
+
+.image-controller, .title-controller, .title-position, .text-position, .button-position, .card-btn{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 2%;
+}
+
+
+.image-controller *{
+  margin-left: 1%;
+}
+
+.title-controller *{
+  margin-left: 1%;
+}
+
+.text-controller *{
+  margin-left: 1%;
+}
+
+.card-btn *{
+  margin-left: 1%;
+}
+
+
+
+.image-controller, .title-controller span:nth-child(1){
+  color: #959595;
+}
+
+.indicator{
+  color: #959595;
+  margin-left: 1%;
+}
+
+.controller span:nth-child(1){
+  color: #959595;
+  margin-left: 1%;
+}
+
+
+.controller {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.px-percent-changer {
+  margin-left: 1%;
+  width: 50px;
+  height: 25px;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #959595;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.title-font-size-controller .px-percent-changer{
+  width: 25px;
+}
+
+.title-font-size-controller .px-percent-changer .px-block{
+  width: 100%;
+  border: none !important;
+}
+
+.px-block, .percent-block{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #959595;
+  cursor: pointer;
+}
+
+.px-block{
+  border-right: 1px solid #959595;
+  background-color: rgb(199, 199, 199);
+  color: #fff;
+}
+
+.px-card-width{
+  background-color: #fff;
+  color: #959595;
+}
+
+.percent-card-width{
+  background-color: rgb(199, 199, 199)  ;
+  color: #fff;
+}
+
+.text-input {
+  width: 75px;
+  height: 100%;
+  margin-left: 1%;
+  border: 1px solid rgb(199, 199, 199);;
+  border-radius: 5px;
+  outline: 0;
+  padding-left: 1%;
+  color: #959595;
+}
+
+.change-digit-btn{
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: rgb(199, 199, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-left: 1%;
+  cursor: pointer;
+}
+
+.text-position, .button-position, .title-position span{
+  color: #959595;
+  margin-left: 1%;
+}
+
+.position-block {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-block div{
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  margin-left: 4%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.position-block div:hover{
+  transform: scale(1.1);
+}
+
+.position-center, .position-right{
+  background-color: #b3b3b3;
+}
+
+.position-left{
+  background-color: #000;
+}
